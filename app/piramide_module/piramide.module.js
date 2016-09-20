@@ -9,23 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Piramide = (function () {
-    function Piramide() {
-        this.elements = [
-            [1],
-            [2, 3],
-            [4, 5, 6],
-            [7, 8, 9, 10]
-        ];
+var platform_browser_1 = require('@angular/platform-browser');
+var piramide_component_1 = require('./components/piramide.component');
+var PiramideModule = (function () {
+    function PiramideModule() {
     }
-    Piramide = __decorate([
-        core_1.Component({
-            selector: 'piramide',
-            templateUrl: './templates/table.html'
+    PiramideModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule],
+            declarations: [piramide_component_1.Piramide],
+            exports: [piramide_component_1.Piramide]
         }), 
         __metadata('design:paramtypes', [])
-    ], Piramide);
-    return Piramide;
+    ], PiramideModule);
+    return PiramideModule;
 }());
-exports.Piramide = Piramide;
-//# sourceMappingURL=app.piramide.js.map
+exports.PiramideModule = PiramideModule;
+//# sourceMappingURL=piramide.module.js.map

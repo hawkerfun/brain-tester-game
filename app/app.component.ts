@@ -1,7 +1,5 @@
 import { Component, NgModule } from '@angular/core';
-import { Title, BrowserModule }     from '@angular/platform-browser';
-
-import {Piramide} from './app.piramide';
+import { Title }     from '@angular/platform-browser';
 
 @Component({
   selector: 'my-app',
@@ -14,10 +12,3 @@ export class AppComponent {
   }
 
 }
-
-@NgModule({
-  imports:      [ BrowserModule],
-  declarations: [AppComponent, Piramide]
-})
-
-export class BodyModule { }

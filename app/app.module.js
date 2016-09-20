@@ -10,12 +10,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var app_component_1 = require('./app.component');
+var piramide_module_1 = require('./piramide_module/piramide.module');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [app_component_1.BodyModule],
+            imports: [piramide_module_1.PiramideModule],
+            declarations: [app_component_1.AppComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
