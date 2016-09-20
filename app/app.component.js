@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
+var app_piramide_1 = require('./app.piramide');
 var AppComponent = (function () {
     function AppComponent(titleService) {
         this.titleService = titleService;
@@ -25,4 +26,17 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
+var BodyModule = (function () {
+    function BodyModule() {
+    }
+    BodyModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule],
+            declarations: [AppComponent, app_piramide_1.Piramide]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], BodyModule);
+    return BodyModule;
+}());
+exports.BodyModule = BodyModule;
 //# sourceMappingURL=app.component.js.map
