@@ -3,7 +3,7 @@ import { Title }     from '@angular/platform-browser';
 
 @Component({
   selector: 'my-app',
-  template: '<piramide></piramide>'
+  template: '<game-board></game-board>'
 })
 
 export class AppComponent {

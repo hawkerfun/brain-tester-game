@@ -1,10 +1,10 @@
 import { NgModule }      from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {PiramideModule} from './piramide_module/piramide.module';
+import {GameBoardModule} from './gameBoard/gameBoard_module';
 
 @NgModule({
-  imports:      [PiramideModule],
+  imports:      [GameBoardModule],
   declarations: [AppComponent],
   bootstrap:    [AppComponent]
 })

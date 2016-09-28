@@ -9,20 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var app_component_1 = require('./app.component');
-var gameBoard_module_1 = require('./gameBoard/gameBoard_module');
-var AppModule = (function () {
-    function AppModule() {
+var platform_browser_1 = require('@angular/platform-browser');
+var gameBoardTable_component_1 = require('./components/gameBoardTable.component');
+var GameBoardModule = (function () {
+    function GameBoardModule() {
     }
-    AppModule = __decorate([
+    GameBoardModule = __decorate([
         core_1.NgModule({
-            imports: [gameBoard_module_1.GameBoardModule],
-            declarations: [app_component_1.AppComponent],
-            bootstrap: [app_component_1.AppComponent]
+            imports: [platform_browser_1.BrowserModule],
+            declarations: [gameBoardTable_component_1.GameBoard],
+            exports: [gameBoardTable_component_1.GameBoard]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], GameBoardModule);
+    return GameBoardModule;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.GameBoardModule = GameBoardModule;
+//# sourceMappingURL=gameBoard_module.js.map

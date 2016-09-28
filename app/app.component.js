@@ -18,7 +18,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<piramide></piramide>'
+            template: '<game-board></game-board>'
         }), 
         __metadata('design:paramtypes', [platform_browser_1.Title])
     ], AppComponent);

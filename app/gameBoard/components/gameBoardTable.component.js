@@ -9,20 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var app_component_1 = require('./app.component');
-var gameBoard_module_1 = require('./gameBoard/gameBoard_module');
-var AppModule = (function () {
-    function AppModule() {
+var GameBoard = (function () {
+    function GameBoard() {
+        this.gameBoardTable = [
+            ['*', '1', '*'],
+            ['*', '1', '1', '*'],
+            ['*', '1', '1', '1', '*'],
+            ['*', '1', '1', '1', '1', '*'],
+            ['*', '1', '1', '1', '1', '1', '*']
+        ];
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [gameBoard_module_1.GameBoardModule],
-            declarations: [app_component_1.AppComponent],
-            bootstrap: [app_component_1.AppComponent]
+    GameBoard = __decorate([
+        core_1.Component({
+            selector: 'game-board',
+            templateUrl: './app/gameBoard/templates/game-board.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], GameBoard);
+    return GameBoard;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.GameBoard = GameBoard;
+//# sourceMappingURL=gameBoardTable.component.js.map

@@ -1,0 +1,5 @@
+<div class="game-board">
+  <div class="row" *ngFor="let row of gameBoardTable">
+    <div class="col-md-1" *ngFor="let cell of row" [innerHTML]="cell"></div>
+  </div>
+</div>
