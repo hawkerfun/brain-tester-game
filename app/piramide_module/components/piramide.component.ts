@@ -7,10 +7,10 @@ import {Component} from  '@angular/core';
 
 export class Piramide {
     public elements = [
-      [1],
-      [2,3],
-      [4,5,6],
-      [7,8,9,10]
+      ['&nbsp;  ','&nbsp;','  1','&nbsp;','&nbsp;'],
+      ['&nbsp;','&nbsp;    2',3,'&nbsp;','&nbsp;'],
+      ['&nbsp;  4',5,6],
+      [7,8,9,4,2]
     ];
 
 }

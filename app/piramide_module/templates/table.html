@@ -1,5 +1,5 @@
 <div>
   <div *ngFor="let row of elements">
-    <span *ngFor="let elem of row">{{elem}}</span>
+    <span *ngFor="let elem of row" [innerHTML]="elem"></span>
   </div>
 </div>
